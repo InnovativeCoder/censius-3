@@ -1,15 +1,14 @@
 import React from 'react'
-import Search from "../components/Search"
 import ShowMembers from "../components/ShowMembers"
-import Sidebar from "../components/Sidebar"
+import Layout from "./Layout"
 
 
 export default function Team() {
     return (
-        <div>
-            <Sidebar />
-            <Search />
-            <ShowMembers />
-        </div>
+        <>
+            <div>
+                <Layout children={<ShowMembers />}/>
+            </div>
+        </>
     )
 }
