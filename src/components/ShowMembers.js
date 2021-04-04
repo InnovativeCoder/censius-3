@@ -81,7 +81,7 @@ export default function ShowMembers() {
                 <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
                     {
                         cardList.map(({image, name, position, emailId})=>{
-                            return <Card image={image} name={name} position={position} emailId={emailId}/>
+                            return <Card key={emailId} image={image} name={name} position={position} emailId={emailId}/>
                         })
                     }
                 </div>
