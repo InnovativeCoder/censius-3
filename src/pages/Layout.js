@@ -10,6 +10,7 @@ export default function Team({children}) {
             <div className="grid grid-cols-6 h-screen">
                 <div className="col-span-1 sidebar">
                     <Sidebar />
+                    hello hello
                 </div>
                 <div className="col-span-5">
                     <div className="hamburger">
